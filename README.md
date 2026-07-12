@@ -6,6 +6,10 @@
 
 The original R source remains in the parent directory. This package is a compatible workflow reimplementation, **not a bit-for-bit replacement**: it reproduces R's hg20 cell-cycle/HLA exclusion, DLM smoothing, Poisson--Gamma posterior/KS segmentation, and Ward.D2 cluster construction. It samples the posterior for the R empirical-KS breakpoint test, then uses the exact Gamma posterior mean for segment levels to avoid unnecessary cross-runtime RNG variation. Validate against the R reference before clinical or publication use.
 
+## Validation
+
+![CopyKAT R vs Python GPU evaluation](docs/figures/copykat_r_python_evaluation.png)
+
 ## Installation
 
 Use the default Python index when reachable:
